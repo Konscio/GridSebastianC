@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-color: black;
+  color: aliceblue; */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  grid-area: header;
+  background-color: grey;
+  text-align: center;
+  padding: 2%;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: white;
+  text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: beige;
+}
+
+.content {
+  text-align: center;
+  font-size: 1.4em;
+  text-shadow: 1px 1px black;
+  background-color: rgba(15, 15, 15, 0.6);
+  color: white;
+  font-stretch: expanded;
+  height: 8em;
+  width: 100%;
+  padding: 1em 8em;
+}
+
+menu {
+  background-color: rgb(39, 39, 39);
+  width: 10em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+menu li {
+  padding: 1em;
+  list-style: none;
+  font-size: large;
+}
+
+menu a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+menu h3,
+p {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+menu a:hover {
+  color: white;
+}
+
+menu li:hover {
+  background-color: rgb(65, 74, 84);
+}
+
+menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.padre {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.derecha {
+  margin: 20px;
+}
+
+.grid-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-item1 {
+  background: grey;
+  text-align: center;
+  border: black 5px solid;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid-item1 img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid black;
+}
+
+button {
+  width: 100%;
+}
